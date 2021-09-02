@@ -1,6 +1,8 @@
 let todoItems = [];
 
 function renderTodo(todo) {
+    localStorage.setItem('todoItems', JSON.stringify(todoItems));
+
   const list = document.querySelector('.js-todo-list');
   const item = document.querySelector(`[data-key='${todo.id}']`);
 
@@ -82,3 +84,13 @@ list.addEventListener('click', event => {
     deleteTodo(itemKey);
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const ref = localStorage.getItem('todoItems');
+    if (ref) {
+      todoItems = JSON.parse(ref);
+      todoItems.forEach(t => {
+        renderTodo(t);
+      });
+    }
+  });
