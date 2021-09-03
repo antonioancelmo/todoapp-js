@@ -140,3 +140,15 @@ display: none;
 .todo-list:empty + .empty-state {
 display: flex;
 }
+
+.SocialMedia{
+  text-align: center;
+}
+.SocialMedia_item{
+  display: inline-block;
+  margin: 0 6px;
+}
+.SocialMedia_item img{
+  width: 100%;
+  max-width: 22px;
+}
