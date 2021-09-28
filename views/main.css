@@ -140,3 +140,34 @@ display: none;
 .todo-list:empty + .empty-state {
 display: flex;
 }
+
+
+footer{
+  background-color: rgb(87, 139, 163);
+  padding: 30px;
+}
+
+.SocialMedia{
+  text-align: center;
+}
+.SocialMedia_item{
+  display: inline-block;
+  margin: 0 6px;
+}
+.SocialMedia_item img{
+  width: 100%;
+  max-width: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  main .row {
+      display: flex;
+      flex-flow: row wrap;
+  }
+  main .column--left {
+      flex-basis: 34%;
+  }
+  main .column--right {
+      flex-basis: 66%;
+  }
+}
