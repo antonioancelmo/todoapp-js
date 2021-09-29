@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  text-align: center;
 }
 
 *, *::before, *::after {
@@ -68,6 +69,19 @@ font-style: italic;
 
 input[type="checkbox"] {
 display: none;
+}
+
+
+button {
+  background-color: white;
+  color: black;
+  text-emphasis-color: black;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 6px 4px;
+  cursor: pointer;
 }
 
 .tick {
